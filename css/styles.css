@@ -267,7 +267,60 @@ ul {
   cursor: pointer;
 }
 
+/* Overlay */
+
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/img\(16\).jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 /* Преимущества */
+
+.box:nth-child(1) {
+  margin-left: 0;
+  background-image: url(../images/sat.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.box:nth-child(2) {
+  background-image: url(../images/time.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.box:nth-child(3) {
+  background-image: url(../images/comp.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.box:nth-child(4) {
+  background-image: url(../images/astro.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.box {
+  margin-left: 30px;
+  margin-bottom: 30px;
+  border: transparent;
+  width: 270px;
+  height: 120px;
+  background: var(--third-bg-color);
+  border-radius: 4px;
+}
+
+.s {
+  display: flex;
+}
 
 .section {
   padding-top: 94px;
@@ -320,6 +373,8 @@ ul {
 .section-sub-title-text {
   margin-top: 0;
   margin-bottom: 0;
+  width: 270px;
+  height: 75px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -360,6 +415,20 @@ ul {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--secodary-text-color);
+}
+
+/* Наши клиенты */
+
+.clients-box {
+  margin-left: 30px;
+  border: 1px solid #afb1b8;
+  width: 170px;
+  height: 92px;
+  border-radius: 4px;
+}
+
+.clients-box:nth-child(1) {
+  margin-left: 0;
 }
 
 /* footer-contacts */
@@ -428,6 +497,12 @@ ul {
 .gallery-item {
   margin-left: 30px;
   margin-bottom: 30px;
+}
+
+.gallery-item:hover,
+.gallery-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .gallery-item:nth-child(1n + 7) {
