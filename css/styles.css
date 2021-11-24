@@ -15,6 +15,7 @@
   --third-bg-color: #f5f4fa;
   --fourth-bg-color: #188ce8;
   --fifth-bg-color: #afb1b8;
+  --sixth-bg-color: rgba(255, 255, 255, 0.1);
 }
 
 body {
@@ -453,6 +454,8 @@ ul {
 
 /*--------------------*/
 
+/*
+
 .icon-social {
   display: inline-block;
   width: 44px;
@@ -498,6 +501,8 @@ ul {
   background-position: center;
 }
 
+*/
+
 /* Наши клиенты */
 
 .clients-list {
@@ -538,7 +543,49 @@ ul {
   cursor: pointer;
 }
 
-/* footer-contacts */
+/* footer-social links*/
+
+.footer-container {
+  align-items: baseline;
+  display: flex;
+}
+
+.icon-social {
+  height: 44px;
+  width: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: var(--primary-bg-color);
+  background-color: var(--sixth-bg-color);
+  border-radius: 50%;
+}
+
+.icon-social:hover,
+.icon-social:focus {
+  background-color: var(--bg-color-effect);
+  border-radius: 50%;
+}
+
+.footer-social-list {
+  margin-right: 10px;
+}
+
+.footer-social-list:last-child {
+  margin-right: 0px;
+}
+
+.footer-social-icon {
+  margin-left: 70px;
+}
+
+.footer-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* footer contacts*/
 
 .footer {
   padding-top: 60px;
@@ -572,9 +619,7 @@ ul {
   color: var(--fifth-text-color);
 }
 
-/* address */
-
-.address {
+.footer-address {
   margin-top: 20px;
 }
 
@@ -606,8 +651,9 @@ ul {
   margin-bottom: 30px;
 }
 
-.gallery-item:hover,
-.gallery-item:focus {
+.gallery-link:hover,
+.gallery-link:focus {
+  display: block;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -667,13 +713,4 @@ p {
   line-height: 1.14;
   letter-spacing: 0.03em;
   color: var(--fifth-text-color);
-}
-
-.footer-social-icon {
-  margin-top: 12px;
-  margin-left: 70px;
-}
-
-.flex {
-  display: flex;
 }
