@@ -305,37 +305,15 @@ ul {
 
 /* Преимущества */
 
-.section-advantages::before {
-  content: '';
-  display: block;
+.icon-advantages {
   margin-bottom: 30px;
   height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   background: var(--third-bg-color);
   border-radius: 4px;
-}
-
-.icon-antenna::before {
-  background-image: url(../images/antenna.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.icon-clock::before {
-  background-image: url(../images/clock.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.icon-diagram::before {
-  background-image: url(../images/diagram.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.icon-astronaut::before {
-  background-image: url(../images/astronaut.svg);
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .box {
@@ -443,6 +421,38 @@ ul {
   color: var(--secodary-text-color);
 }
 
+.social-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-top: 16px;
+}
+
+.personal-links {
+  margin-left: 10px;
+  height: 44px;
+  width: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: var(--fifth-bg-color);
+}
+
+.personal-links:hover,
+.personal-links:focus {
+  fill: var(--primary-bg-color);
+  background-color: var(--bg-color-effect);
+  border-radius: 50%;
+}
+
+.personal-links:first-child {
+  margin-left: 0px;
+}
+
+/*--------------------*/
+
 .icon-social {
   display: inline-block;
   width: 44px;
@@ -498,45 +508,34 @@ ul {
 
 .clients-box {
   margin-left: 30px;
-  border: 1px solid var(--fifth-bg-color);
   width: 170px;
   height: 92px;
-  border-radius: 4px;
-  background-position: center;
-  justify-content: center;
-  align-items: center;
+}
+
+.clients-box:first-child {
+  margin-left: 0px;
+  width: 170px;
+  height: 92px;
 }
 
 .our-clients {
-  width: 170px;
-  height: 92px;
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 1px solid var(--fifth-bg-color);
+  fill: var(--fifth-bg-color);
+  border-radius: 4px;
   color: var(--fifth-bg-color);
 }
 
 .our-clients:hover,
 .our-clients:focus {
   border: 1px solid var(--bg-color-effect);
+  fill: var(--bg-color-effect);
   border-radius: 4px;
   cursor: pointer;
-}
-
-.our-clients:hover svg,
-.our-clients:focus svg {
-  fill: var(--bg-color-effect);
-  cursor: pointer;
-}
-
-.clients-box:nth-child(1) {
-  margin-left: 0;
-}
-
-.icon-logo {
-  width: 106px;
-  height: 60px;
-  fill: var(--fifth-bg-color);
 }
 
 /* footer-contacts */
@@ -677,55 +676,4 @@ p {
 
 .flex {
   display: flex;
-}
-
-.social-links {
-  margin-top: 16px;
-  display: flex;
-  height: 44px;
-  width: auto;
-  justify-content: center;
-  align-items: center;
-}
-
-.social-links-item {
-  width: 44px;
-  height: 44px;
-  align-items: center;
-  justify-content: center;
-}
-
-.social-links-item:hover,
-.social-links-item:focus {
-  width: 44px;
-  height: 44px;
-  background-color: var(--bg-color-effect);
-  border-radius: 50%;
-  align-items: center;
-  justify-content: center;
-}
-
-.social-links-item + .social-links-item {
-  margin-left: 10px;
-}
-
-.personal-icons {
-  align-items: center;
-  justify-content: center;
-  fill: var(--fifth-bg-color);
-}
-
-.personal-links {
-  height: 44px;
-  width: 44px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.personal-links:hover svg,
-.personal-links:focus svg {
-  fill: var(--primary-bg-color);
-  align-items: center;
-  justify-content: center;
 }
