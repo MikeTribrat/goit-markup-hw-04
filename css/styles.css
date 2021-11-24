@@ -180,6 +180,8 @@ a {
   fill: var(--bg-color-effect);
 }
 
+/*-------------------*/
+
 ul {
   margin: 0;
   padding: 0;
@@ -188,19 +190,6 @@ ul {
 
 .team {
   display: flex;
-}
-
-.filter {
-  display: flex;
-  margin-bottom: 50px;
-  justify-content: center;
-}
-
-.filter-item {
-  margin-right: 8px;
-}
-.filter-item:last-child {
-  margin-right: 0;
 }
 
 .visually-hidden {
@@ -245,6 +234,19 @@ ul {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   cursor: pointer;
+}
+
+.filter {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+
+.filter-item {
+  margin-right: 8px;
+}
+.filter-item:last-child {
+  margin-right: 0;
 }
 
 /* hero-section */
@@ -452,56 +454,14 @@ ul {
   margin-left: 0px;
 }
 
-/*--------------------*/
-
-/*
-
-.icon-social {
-  display: inline-block;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
+.team-res + .team-res {
+  margin-left: 30px;
 }
 
-.icon-social:hover,
-.icon-social:focus {
-  display: inline-block;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background-color: var(--bg-color-effect);
-  cursor: pointer;
+.hr {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
-
-.instagram {
-  background-image: url(../images/instagramwhite.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.twitter {
-  margin-left: 10px;
-  background-image: url(../images/twitterwhite.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.facebook {
-  margin-left: 10px;
-  background-image: url(../images/facebookwhite.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.linkedin {
-  margin-left: 10px;
-  background-image: url(../images/linkedinwhite.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-*/
 
 /* Наши клиенты */
 
@@ -680,10 +640,6 @@ ul {
   margin-top: 4px;
 }
 
-.team-res + .team-res {
-  margin-left: 30px;
-}
-
 img {
   display: block;
   max-width: 100%;
@@ -699,11 +655,6 @@ h6,
 p {
   margin: 0;
   padding: 0;
-}
-
-.hr {
-  padding-top: 30px;
-  padding-bottom: 30px;
 }
 
 .joinup {
